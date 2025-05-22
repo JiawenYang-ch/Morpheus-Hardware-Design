@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <style>
+
+    img {
+        margin-bottom: 10px; 
+    }
+    body {
+        font-family: 'Google Sans', sans-serif;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 24px;
+    }
+
+    p {
+        font-family: 'Castoro', serif;
+        font-size: 20px;
+    }
+
+    /* Add more custom styles here as needed */
+  </style>
+  
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title" style="text-align: center;">
+              Morpheus: A Neural-driven Animatronic Face with Hybrid Actuation and Diverse Emotion Control
+            </h1>
+            <div class="is-size-5 publication-authors" style="text-align: center;">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://cwb0106.github.io/" target="_blank">Zongzheng Zhang<sup>*</sup></a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                <a href="https://chengyzhao.github.io/" target="_blank">Jiawen Yang<sup>*</sup></a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://songlin.github.io/" target="_blank">Ziqiao Peng<sup>1</sup></a>,</span>
+              <span class="author-block">
+                <a href="https://jzhzhang.github.io/" target="_blank">Meng Yang<sup>4</sup></a>
+              <span class="author-block">
+                <a href="https://geng-haoran.github.io/" target="_blank">Jianzhu Ma<sup>1</sup></a>
+              <span class="author-block">
+                <a href="https://pku-epic.github.io/GAPartManip/" target="_blank">Lin Cheng<sup>5</sup></a>
+              <span class="author-block">
+                <a href="https://pku-epic.github.io/GAPartManip/" target="_blank">Huazhe Xu<sup>3</sup></a>
+              <span class="author-block">
+                <a href="https://hughw19.github.io/" target="_blank">Hang Zhao<sup>3</sup></a>
+              <span class="author-block">
+                  <a href="https://pku-epic.github.io/GAPartManip/" target="_blank">Hao Zhao<sup>&dagger;</sup><sup>1,2</sup></a>
+              </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors" style="text-align: center;">
+                    <span class="author-block">
+                        <span><sup>1</sup>Institute for AI Industry Research (AIR), Tsinghua University</span>, 
+                        <span><sup>2</sup>Beijing Academy of Artificial Intelligence (BAAI)</span>,</br>
+                        <span><sup>3</sup>Institute for Interdisciplinary Information Sciences(IIIS), Tsinghua University</span>, 
+                        <span><sup>4</sup>MGI Tech, Shenzhen, China</span>
+                        <span><sup>5</sup>Beihang University</span>
+                    </span>
+                    <br>
+                    <span class="eql-cntrb">
+                      <small><sup>*</sup>Equal Contribution</small>
+                      <small><sup>&dagger;</sup>Corresponding Author</small>
+                    </span>
+                    <br>
+                    <span class="author-block">
+                        RSS 2025
+                    </span>
+                    
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+                <!-- ArXiv abstract Link -->
+                <!--
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2411.18276" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                -->
+
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://pku-epic.github.io/GAPartManip/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Comming Soon)</span>
+                  
+                <span class="link-block">
+                  <a href="https://pku-epic.github.io/GAPartManip/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Dataset (Comming Soon)</span>
+                  </a>
+                </span>
+
+
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="text-align: center;">
+      <img src="Fig/teaser.jpg" 
+           alt="Morpheus: Hybrid Actuation Animatronic Face" 
+           style="display: block; 
+                  margin: 0 auto; 
+                  max-width: 100%; 
+                  height: auto;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <!-- 可选的图片说明文字 -->
+      <!-- <p class="has-text-centered is-italic" style="margin-top: 10px;">
+        Morpheus 
+      </p> -->
+    </div>
+  </div>
+</section>
+<!-- End teaser section -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Previous animatronic faces struggle to express emotions effectively due to hardware and software limitations. On the hardware side, earlier approaches either use rigid-driven mechanisms, which provide precise control but are difficult to design within constrained spaces, or tendon-driven mechanisms, which are more space-efficient but challenging to control. In contrast, we propose a hybrid actuation approach that combines the best of both worlds. The eyes and mouth—key areas for emotional expression—are controlled using rigid mechanisms for precise movement, while the nose and cheek, which convey subtle facial microexpressions, are driven by strings. This design allows us to build a compact yet versatile hardware platform capable of expressing a wide range of emotions. On the algorithmic side, our method introduces a self-modeling network that maps motor actions to facial landmarks, allowing us to automatically establish the relationship between blendshape coefficients for different facial expressions and the corresponding motor control signals through gradient backpropagation. We then train a neural network to map speech input to corresponding blendshape controls. With our method, we can generate distinct emotional expressions such as happiness, fear, disgust, and anger, from any given sentence, each with nuanced, emotion specific control signals—a feature that has not been demonstrated in earlier systems. We release the hardware design and code at https://github.com/ZZongzheng0918/Morpheus-Hardware and https://github.com/ZZongzheng0918/Morpheus-Software.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Overview of of the Mechanism for Generating Realistic Speech-driven Facial Expressions.-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3">System Overview</h2>
+      
+      <!-- Image with centered display -->
+      <img src="Fig/overview.jpg" 
+           alt="Overview of of the Mechanism for Generating Realistic Speech-driven Facial Expressions."
+           style="display:block; margin:30px auto; width:80%; max-width:900px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+      
+      <!-- Your description text -->
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <div class="content has-text-centered">
+            <p class="is-size-5">
+              Our speech-driven robotic face system with varying expressions consists of three main components:
+              <strong>1) Emotional Facial Animation</strong> module, <strong>2) Mechanical Face Platform</strong>, and <strong>3) Face Inverse Learning</strong> module.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Optional: Add numbered annotations on the image? -->
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Dataset Teaser -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3">Dataset</h2>
+      <img src="static/images/Teaser.jpg" alt="MY ALT TEXT"/ style="display:block; margin: 30px auto; width:50%; height:auto;">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="content has-text-justified">
+                <p>
+                  We introduce a large-scale part-centric dataset for material-agnostic articulated object manipulation. It encompasses <strong>19</strong> common household articulated categories, totaling <strong>918</strong> object instances, <strong>240K</strong> photo-realistic rendering images, and <strong>8B</strong> scene-level actionable interaction poses. GAPartManip enables robust zero-shot sim-to-real transfer for accomplishing articulated object manipulation tasks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+
+
+<!-- Pipeline -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3">Framework</h2>
+      <img src="static/images/pipeline.jpg" alt="MY ALT TEXT"/ style="display:block; margin: 30px auto; width:100%; height:auto;">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="content has-text-justified">
+                <p>
+                  Given IR images and raw depth map, the depth reconstruction module first performs depth recovery. Subsequently, the pose prediction module generates a 7-DoF actionable pose and a 6-DoF post-grasping motion for interaction based on the reconstructed depth. Finally, the local planner module carries out the action planning and execution.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+<!-- Pipeline -->
+
+<!-- Results -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3">Results</h2>
+      <h3 class="title is-4">Cross-Category Depth Estimation</h3>
+      <img src="static/images/depth_result.png" alt="MY ALT TEXT"/ style="display:block; margin: 30px auto; width:70%; height:auto;">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="content has-text-justified">
+                <p>
+                   Qualitative Results for Depth Estimation in the Real World. 
+                   Our refined depth maps are cleaner and more accurate than the ones from the baseline, indicating that our depth reconstruction module is more robust for transparent and translucent lids and small handles.
+                   Zoom in to better observe small parts like handles and knobs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<h3 class="title is-4">Cross-Category Interaction Pose Prediction</h3>
+      <img src="static/images/Pose_result.png" alt="MY ALT TEXT"/ style="display:block; margin: 30px auto; width:70%; height:auto;">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="content has-text-justified">
+                <p>
+                  Qualitative Comparison of Actionable Pose Prediction in Simulation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<h3 class="title is-4">Part-aware Articulaed Object Manipulation</h3>
+      <img src="static/images/real_demo_result.png" alt="MY ALT TEXT"/ style="display:block; margin: 30px auto; width:70%; height:auto;">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="content has-text-justified">
+                <p>
+                   Qualitative Results For Real-world Manipulation. 
+                   The actionable poses with top scores are displayed, with the red gripper representing the top-1 pose.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+  </div>
+</div>
+<!-- Results -->
+
+  
+  
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @article{cui2024gapartmanip,
+          title={GAPartManip: A Large-scale Part-centric Dataset for Material-Agnostic Articulated Object Manipulation},
+          author={Cui, Wenbo and Zhao, Chengyang and Wei, Songlin and Zhang, Jiazhao and Geng, Haoran and Chen, Yaran and Li, Haoran and Wang, He},
+          journal={arXiv preprint arXiv:2411.18276},
+          year={2024}
+        }
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Contact</h2>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            <li> <strong>Wenbo Cui</strong>: cuiwenbo2023@ia.ac.cn </li>
+            <li> <strong>He Wang</strong>: hewang@pku.edu.cn </li>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
