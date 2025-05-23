@@ -100,7 +100,7 @@
               <span class="author-block">
                   <a href="https://sites.google.com/view/fromandto/" target="_blank">Hao Zhao<sup>&dagger;</sup><sup>1,2</sup></a>
               </span>
-            </div>
+                  </div>
 
                   <div class="is-size-5 publication-authors" style="text-align: center;">
                     <span class="author-block">
@@ -122,22 +122,30 @@
                     
                   </div>
 
-                  
-                  <div class="publication-links has-text-centered">  <!-- 添加 has-text-centered -->
-                    <span class="link-block">
-                    <a href="#" class="button is-normal is-rounded is-dark">
-      <span class="icon"><i class="fab fa-github"></i></span>
-      <span>Code (Coming Soon)</span>
-    </a>
-  </span>
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
 
-  <span class="link-block">
-    <a href="#" class="button is-normal is-rounded is-dark">
-      <span class="icon"><i class="fab fa-github"></i></span>
-      <span>Dataset (Coming Soon)</span>
-    </a>
-  </span>
-</div>
+                <!-- Github link -->
+                <span class="link-block" style="text-align: center;">
+                  <a href="https://pku-epic.github.io/GAPartManip/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark" style="text-align: center;">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Comming Soon)</span>
+                  
+                <span class="link-block">
+                  <a href="https://pku-epic.github.io/GAPartManip/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark" style="text-align: center;">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Dataset (Comming Soon)</span>
+                  </a>
+                </span>
+
+
+                </a>
               </span>
             </div>
           </div>
@@ -192,7 +200,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Previous animatronic faces struggle to express emotions effectively due to hardware and software limitations. On the hardware side, earlier approaches either use rigid-driven mechanisms, which provide precise control but are difficult to design within constrained spaces, or tendon-driven mechanisms, which are more space-efficient but challenging to control. In contrast, we propose a hybrid actuation approach that combines the best of both worlds. The eyes and mouth—key areas for emotional expression—are controlled using rigid mechanisms for precise movement, while the nose and cheek, which convey subtle facial microexpressions, are driven by strings. This design allows us to build a compact yet versatile hardware platform capable of expressing a wide range of emotions. On the algorithmic side, our method introduces a self-modeling network that maps motor actions to facial landmarks, allowing us to automatically establish the relationship between blendshape coefficients for different facial expressions and the corresponding motor control signals through gradient backpropagation. We then train a neural network to map speech input to corresponding blendshape controls. With our method, we can generate distinct emotional expressions such as happiness, fear, disgust, and anger, from any given sentence, each with nuanced, emotion specific control signals—a feature that has not been demonstrated in earlier systems. We release the hardware design and code at <a href="https://sites.google.com/view/fromandto/" target="_blank">https://github.com/ZZongzheng0918/Morpheus-Hardware </a>and <a href="https://sites.google.com/view/fromandto/" target="_blank">https://github.com/ZZongzheng0918/Morpheus-Software</a>.
+            Previous animatronic faces struggle to express emotions effectively due to hardware and software limitations. On the hardware side, earlier approaches either use rigid-driven mechanisms, which provide precise control but are difficult to design within constrained spaces, or tendon-driven mechanisms, which are more space-efficient but challenging to control. In contrast, we propose a hybrid actuation approach that combines the best of both worlds. The eyes and mouth—key areas for emotional expression—are controlled using rigid mechanisms for precise movement, while the nose and cheek, which convey subtle facial microexpressions, are driven by strings. This design allows us to build a compact yet versatile hardware platform capable of expressing a wide range of emotions. On the algorithmic side, our method introduces a self-modeling network that maps motor actions to facial landmarks, allowing us to automatically establish the relationship between blendshape coefficients for different facial expressions and the corresponding motor control signals through gradient backpropagation. We then train a neural network to map speech input to corresponding blendshape controls. With our method, we can generate distinct emotional expressions such as happiness, fear, disgust, and anger, from any given sentence, each with nuanced, emotion specific control signals—a feature that has not been demonstrated in earlier systems. We release the hardware design and code at https://github.com/ZZongzheng0918/Morpheus-Hardware and https://github.com/ZZongzheng0918/Morpheus-Software.
           </p>
         </div>
       </div>
