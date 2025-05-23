@@ -82,23 +82,23 @@
             <div class="is-size-5 publication-authors" style="text-align: center;">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://cwb0106.github.io/" target="_blank">Zongzheng Zhang<sup>*</sup></a><sup>1,2</sup>,</span>
+                <a target="_blank">Zongzheng Zhang<sup>*</sup></a><sup>1,2</sup>,</span>
               <span class="author-block">
-                <a href="https://chengyzhao.github.io/" target="_blank">Jiawen Yang<sup>*</sup></a><sup>1</sup>,</span>
+                <a target="_blank">Jiawen Yang<sup>*</sup></a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://songlin.github.io/" target="_blank">Ziqiao Peng<sup>1</sup></a>,</span>
+                <a target="_blank">Ziqiao Peng<sup>1</sup></a>,</span>
               <span class="author-block">
-                <a href="https://jzhzhang.github.io/" target="_blank">Meng Yang<sup>4</sup></a>
+                <a target="_blank">Meng Yang<sup>4</sup></a>
               <span class="author-block">
-                <a href="https://geng-haoran.github.io/" target="_blank">Jianzhu Ma<sup>1</sup></a>
+                <a href="https://majianzhu.com/" target="_blank">Jianzhu Ma<sup>1</sup></a>
               <span class="author-block">
-                <a href="https://pku-epic.github.io/GAPartManip/" target="_blank">Lin Cheng<sup>5</sup></a>
+                <a target="_blank">Lin Cheng<sup>5</sup></a>
               <span class="author-block">
-                <a href="https://pku-epic.github.io/GAPartManip/" target="_blank">Huazhe Xu<sup>3</sup></a>
+                <a href="http://hxu.rocks/" target="_blank">Huazhe Xu<sup>3</sup></a>
               <span class="author-block">
-                <a href="https://hughw19.github.io/" target="_blank">Hang Zhao<sup>3</sup></a>
+                <a href="https://hangzhaomit.github.io/" target="_blank">Hang Zhao<sup>3</sup></a>
               <span class="author-block">
-                  <a href="https://pku-epic.github.io/GAPartManip/" target="_blank">Hao Zhao<sup>&dagger;</sup><sup>1,2</sup></a>
+                  <a href="https://sites.google.com/view/fromandto/" target="_blank">Hao Zhao<sup>&dagger;</sup><sup>1,2</sup></a>
               </span>
                   </div>
 
@@ -140,7 +140,7 @@
                 <!-- Github link -->
                 <span class="link-block">
                   <a href="https://pku-epic.github.io/GAPartManip/" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
+                  class="external-link button is-normal is-rounded is-dark" style="text-align: center;">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
@@ -148,7 +148,7 @@
                   
                 <span class="link-block">
                   <a href="https://pku-epic.github.io/GAPartManip/" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
+                  class="external-link button is-normal is-rounded is-dark" style="text-align: center;">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
@@ -267,7 +267,7 @@
         <div class="column is-three-quarters">
           <div class="content has-text-centered">
             <p class="is-size-5">
-              The <strong>Mechanical Face Platform</strong> consists of four components: <strong>1)Neck moudle </strong>, <strong>2)Mouth module</strong>, <strong>3)Eye module</strong> and <strong>4)Eyebrow module</strong>. Further details can be seen at:.
+              The <strong>Mechanical Face Platform</strong> consists of four components: <strong>1)Neck moudle </strong>, <strong>2)Mouth module</strong>, <strong>3)Eye module</strong> and <strong>4)Eyebrow module</strong>. Further details can be seen at:<a href="http://hxu.rocks/" target="_blank">https://github.com/ZZongzheng0918/Morpheus-Hardware.git.</a>
             </p>
           </div>
         </div>
@@ -299,13 +299,12 @@
   <div class="hero-body">
     <div class="container is-max-desktop content">
       <h2 class="title is-3">Dataset</h2>
-      <img src="static/images/Teaser.jpg" alt="MY ALT TEXT"/ style="display:block; margin: 30px auto; width:50%; height:auto;">
       <div class="container is-max-desktop">
           <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
               <div class="content has-text-justified">
                 <p>
-                  We introduce a large-scale part-centric dataset for material-agnostic articulated object manipulation. It encompasses <strong>19</strong> common household articulated categories, totaling <strong>918</strong> object instances, <strong>240K</strong> photo-realistic rendering images, and <strong>8B</strong> scene-level actionable interaction poses. GAPartManip enables robust zero-shot sim-to-real transfer for accomplishing articulated object manipulation tasks.
+                  To train our Emotional Facial Animation module, we use the 3D-ETF dataset. This dataset includes multi-emotion facial animation data with a total duration of five hours. Two widely used 2D audio-visual datasets are utilized to construct the 3D-ETF dataset: RAVDESS and HDTF. By combining these datasets, the 3D-ETF dataset provides different emotions and high-resolution facial animation data, enabling our model to learn nuanced emotional expressions. To train the Face Inverse Learning module, we construct a dataset for our system. As described in Sec. III-D, 26 motors control various facial expressions. To avoid structural interference during the random generation of control commands, we impose constraints on each motor’s movement commands beforehand. Since each motor can have multiple possible positions, the number of possible facial expressions that can be generated is exponentially large.
                 </p>
               </div>
             </div>
@@ -316,98 +315,17 @@
 </div>
 </section>
 <!-- End image carousel -->
-
-
-
-
-<!-- Pipeline -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop content">
-      <h2 class="title is-3">Framework</h2>
-      <img src="static/images/pipeline.jpg" alt="MY ALT TEXT"/ style="display:block; margin: 30px auto; width:100%; height:auto;">
-      <div class="container is-max-desktop">
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <div class="content has-text-justified">
-                <p>
-                  Given IR images and raw depth map, the depth reconstruction module first performs depth recovery. Subsequently, the pose prediction module generates a 7-DoF actionable pose and a 6-DoF post-grasping motion for interaction based on the reconstructed depth. Finally, the local planner module carries out the action planning and execution.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-  </div>
-</div>
-<!-- Pipeline -->
-
-<!-- Results -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop content">
-      <h2 class="title is-3">Results</h2>
-      <h3 class="title is-4">Cross-Category Depth Estimation</h3>
-      <img src="static/images/depth_result.png" alt="MY ALT TEXT"/ style="display:block; margin: 30px auto; width:70%; height:auto;">
-      <div class="container is-max-desktop">
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <div class="content has-text-justified">
-                <p>
-                   Qualitative Results for Depth Estimation in the Real World. 
-                   Our refined depth maps are cleaner and more accurate than the ones from the baseline, indicating that our depth reconstruction module is more robust for transparent and translucent lids and small handles.
-                   Zoom in to better observe small parts like handles and knobs.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-<h3 class="title is-4">Cross-Category Interaction Pose Prediction</h3>
-      <img src="static/images/Pose_result.png" alt="MY ALT TEXT"/ style="display:block; margin: 30px auto; width:70%; height:auto;">
-      <div class="container is-max-desktop">
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <div class="content has-text-justified">
-                <p>
-                  Qualitative Comparison of Actionable Pose Prediction in Simulation.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-<h3 class="title is-4">Part-aware Articulaed Object Manipulation</h3>
-      <img src="static/images/real_demo_result.png" alt="MY ALT TEXT"/ style="display:block; margin: 30px auto; width:70%; height:auto;">
-      <div class="container is-max-desktop">
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <div class="content has-text-justified">
-                <p>
-                   Qualitative Results For Real-world Manipulation. 
-                   The actionable poses with top scores are displayed, with the red gripper representing the top-1 pose.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      
-  </div>
-</div>
-<!-- Results -->
-
-  
-  
+ 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-        @article{cui2024gapartmanip,
-          title={GAPartManip: A Large-scale Part-centric Dataset for Material-Agnostic Articulated Object Manipulation},
-          author={Cui, Wenbo and Zhao, Chengyang and Wei, Songlin and Zhang, Jiazhao and Geng, Haoran and Chen, Yaran and Li, Haoran and Wang, He},
-          journal={arXiv preprint arXiv:2411.18276},
-          year={2024}
+        @article{Morpheus,
+          title={Morpheus: A Neural-driven Animatronic Face with Hybrid Actuation and Diverse Emotion Control},
+          author={Zongzheng Zhang and Jiawen Yang and Ziqiao Peng and Meng Yang and Jianzhu Ma and Lin Cheng and Huazhe Xu and Hang Zhao and Hao Zhao},
+          journal={Robotics: Science and Systems (RSS)},
+          year={2025}
         }
       </code></pre>
     </div>
@@ -423,8 +341,8 @@
         <div class="content">
 
           <p>
-            <li> <strong>Wenbo Cui</strong>: cuiwenbo2023@ia.ac.cn </li>
-            <li> <strong>He Wang</strong>: hewang@pku.edu.cn </li>
+            <li> <strong>Hang Zhao</strong>: cuiwenbo2023@ia.ac.cn </li>
+            <li> <strong>Hao Zhao</strong>: hewang@pku.edu.cn </li>
           </p>
 
         </div>
