@@ -37,6 +37,11 @@
     body {
         font-family: 'Google Sans', sans-serif;
         font-size: 16px;
+        /* 或者分别设置 */
+        margin-top: 20px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        margin-left: 40px;
     }
 
     h1 {
@@ -123,7 +128,7 @@
                   </div>
 
                   <div class="column has-text-centered">
-                    <div class="publication-links">
+                    <div class="publication-links" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
 
                 <!-- Github link -->
                 <span class="link-block" >
@@ -282,27 +287,6 @@
   </div>
 </section>
 
-<!-- Dataset Teaser -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop content">
-      <h2 class="title is-3">Dataset</h2>
-      <div class="container is-max-desktop">
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <div class="content has-text-justified">
-                <p>
-                  To train our Emotional Facial Animation module, we use the 3D-ETF dataset. This dataset includes multi-emotion facial animation data with a total duration of five hours. Two widely used 2D audio-visual datasets are utilized to construct the 3D-ETF dataset: RAVDESS and HDTF. By combining these datasets, the 3D-ETF dataset provides different emotions and high-resolution facial animation data, enabling our model to learn nuanced emotional expressions. To train the Face Inverse Learning module, we construct a dataset for our system. As described in Sec. III-D, 26 motors control various facial expressions. To avoid structural interference during the random generation of control commands, we impose constraints on each motor’s movement commands beforehand. Since each motor can have multiple possible positions, the number of possible facial expressions that can be generated is exponentially large.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
  
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
