@@ -236,7 +236,7 @@
       <!-- Image with centered display -->
       <img src="Fig/overview.jpg" 
            alt="Overview of of the Mechanism for Generating Realistic Speech-driven Facial Expressions."
-           style="display:block; margin:30px auto; width:150%; max-width:900px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+           style="display:block; margin:30px auto; width:100%; max-width:900px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
       
       <!-- Your description text -->
       <div class="columns is-centered">
@@ -507,7 +507,7 @@
 /* 网格样式 (保持原有样式不变) */
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* 强制2列 */
   gap: 1.5rem;
   padding: 1rem;
 }
@@ -517,32 +517,13 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.video-item:hover {
-  transform: translateY(-3px);
 }
 
 video {
-  width: 50%;
+  width: 100%;
   height: auto;
   aspect-ratio: 16/9;
-  object-fit: cover;
-}
-
-.video-caption {
-  padding: 12px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* 响应式适配 */
-@media (max-width: 1024px) {
-  .video-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  display: block; /* 修复可能的行内元素间隙 */
 }
 
 </style>
