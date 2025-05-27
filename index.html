@@ -1,172 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners -->
-  <meta name="description" content="Morpheus: A Neural-driven Animatronic Face with Hybrid Actuation and Diverse Emotion Control">
-  <meta property="og:title" content="Morpheus: A Neural-driven Animatronic Face with Hybrid Actuation and Diverse Emotion Control"/>
-  <meta property="og:description" content="A hybrid actuation animatronic face with neural-driven emotion control"/>
-  <meta property="og:url" content="YOUR_WEBSITE_URL"/>
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-  <meta name="twitter:title" content="Morpheus: Neural-driven Animatronic Face">
-  <meta name="twitter:description" content="Hybrid actuation and emotion control for realistic facial expressions">
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="keywords" content="animatronics, robotics, emotion control, neural networks">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Morpheus: Neural-driven Animatronic Face</title>
-
-  <!-- Fonts and Icons -->
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-
-  <!-- Bulma Framework -->
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-
-  <!-- Custom Styles -->
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
   <style>
-    :root {
-      --primary-color: #2B3A67;
-      --secondary-color: #496A81;
-    }
-
     body {
-      font-family: 'Google Sans', sans-serif;
-      line-height: 1.6;
-      color: #333;
+      background: rgb(255, 255, 255) no-repeat fixed top left;
+      font-family: 'Open Sans', sans-serif;
     }
-    section {
-      margin: 40px 5%;
-    }
-    @media (max-width: 768px) {
-      section {
-        margin: 20px 3%;
-      }
-    }
-    /* Video Carousel Styles */
-    #video-container {display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      gap: 1rem;
-      padding-bottom: 1rem;
-    }
-    #video-container::-webkit-scrollbar {display: none;}
-
-    .slide {
-      flex: 0 0 75%;
-      scroll-snap-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    /* Responsive Adjustments */
-    @media (max-width: 768px) {
-      .slide { flex: 0 0 85%; }
-      .hero-body { padding: 2rem 1.5rem; }
-    }
-
-    /* Existing Morpheus Styles */
-    .publication-title { color: var(--primary-color); }
-    .teaser img { border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
   </style>
 
-  <!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
 </head>
 
-<!-- Body content remains unchanged from original Morpheus file -->
-<body>
-  ...
-</body>
-</html>
+<!-- cover -->
+<section>
+  <div class="jumbotron text-center mt-0">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h2 style="font-size:30px;">Morpheus: Neural-driven Animatronic Face</h2>
+          <h4 style="color:#6e6e6e;"> RSS 2025 </h4>
+          <hr>
+          <h6>
+            <a target="_blank">Zongzheng Zhang<sup>*</sup></a><sup>1,2</sup>,</span>&nbsp; &nbsp;
+            <a target="_blank">Jiawen Yang<sup>*</sup></a><sup>1</sup>,</span>&nbsp; &nbsp;
+            <a target="_blank">Ziqiao Peng<sup>1</sup></a>,</span>&nbsp; &nbsp;
+            <a target="_blank">Meng Yang<sup>4</sup></a>
+            <a href="https://majianzhu.com/" target="_blank">Jianzhu Ma<sup>1</sup></a>
+            <a target="_blank">Lin Cheng<sup>5</sup></a>
+            <a href="http://hxu.rocks/" target="_blank">Huazhe Xu<sup>3</sup></a>
+            <a href="https://hangzhaomit.github.io/" target="_blank">Hang Zhao<sup>3</sup></a>
+            <a href="https://sites.google.com/view/fromandto/" target="_blank">Hao Zhao<sup>&dagger;</sup><sup>1,2</sup></a>
 
+            <br>
+            <br>
+            <p> <sup>1</sup>Institute for AI Industry Research (AIR), Tsinghua University,&nbsp; &nbsp;
+              <sup>2</sup>Beijing Academy of Artificial Intelligence (BAAI),&nbsp; &nbsp;
+              <sup>3</sup>Institute for Interdisciplinary Information Sciences(IIIS), Tsinghua University,&nbsp; &nbsp;
+              <sup>4</sup>MGI Tech, Shenzhen, China,
+              <sup>5</sup>Beihang University
+              <br>
+            </p>
+            <p> <sup>*</sup> equal contributions &nbsp;
+              <sup>†</sup> corresponding author &nbsp;
+              <br>
+            </p>
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title" style="text-align: center;">
-              Morpheus: A Neural-driven Animatronic Face with Hybrid Actuation and Diverse Emotion Control
-            </h1>
-            <div class="is-size-5 publication-authors" style="text-align: center;">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a target="_blank">Zongzheng Zhang<sup>*</sup></a><sup>1,2</sup>,</span>
-              <span class="author-block">
-                <a target="_blank">Jiawen Yang<sup>*</sup></a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a target="_blank">Ziqiao Peng<sup>1</sup></a>,</span>
-              <span class="author-block">
-                <a target="_blank">Meng Yang<sup>4</sup></a>
-              <span class="author-block">
-                <a href="https://majianzhu.com/" target="_blank">Jianzhu Ma<sup>1</sup></a>
-              <span class="author-block">
-                <a target="_blank">Lin Cheng<sup>5</sup></a>
-              <span class="author-block">
-                <a href="http://hxu.rocks/" target="_blank">Huazhe Xu<sup>3</sup></a>
-              <span class="author-block">
-                <a href="https://hangzhaomit.github.io/" target="_blank">Hang Zhao<sup>3</sup></a>
-              <span class="author-block">
-                  <a href="https://sites.google.com/view/fromandto/" target="_blank">Hao Zhao<sup>&dagger;</sup><sup>1,2</sup></a>
-              </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors" style="text-align: center;">
-                    <span class="author-block">
-                        <span><sup>1</sup>Institute for AI Industry Research (AIR), Tsinghua University</span>, 
-                        <span><sup>2</sup>Beijing Academy of Artificial Intelligence (BAAI)</span>,</br>
-                        <span><sup>3</sup>Institute for Interdisciplinary Information Sciences(IIIS), Tsinghua University</span>, 
-                        <span><sup>4</sup>MGI Tech, Shenzhen, China</span>
-                        <span><sup>5</sup>Beihang University</span>
-                    </span>
-                    <br>
-                    <span class="eql-cntrb">
-                      <small><sup>*</sup>Equal Contribution</small>
-                      <small><sup>&dagger;</sup>Corresponding Author</small>
-                    </span>
-                    <br>
-                    <span class="author-block">
-                        RSS 2025
-                    </span>
-                    
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
-
-                <!-- Github link -->
-                <span class="link-block" >
-                  <a href="https://pku-epic.github.io/GAPartManip/" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark" style="text-align: center;">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code (Comming Soon)</span>
-                  
-                <span class="link-block">
-                  <a href="https://pku-epic.github.io/GAPartManip/" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark" style="text-align: center;">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
-                  <span>Dataset (Comming Soon)</span>
-                  </a>
-                </span>
-
-
-                </a>
-              </span>
+            <div class="row justify-content-center">
+              <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light" href="https://roboticsconference.org/program/papers/80/" role="button" target="_blank">
+                    <i class="fa fa-file"></i> Paper </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/JYChen18/Dexonomy" role="button" target="_blank">
+                <i class="fa fa-github-alt"></i> Hardware </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://huggingface.co/datasets/JiayiChenPKU/Dexonomy/tree/main" role="button" target="_blank">
+                <i class="fa fa-github-alt"></i> Code </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/JYChen18/DexLearn" role="button" target="_blank">
+                <i class="fa fa-github-alt"></i> Dataset </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://gfrl.github.io/DexAnno/" role="button" target="_blank">
+                <i class="fa fa-github-alt"></i> Demo </a> </p>
+              </div>
             </div>
-          </div>
+
         </div>
       </div>
     </div>
@@ -174,136 +82,57 @@
 </section>
 
 
-<!-- video teaser -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="has-text-centered" style="text-align: center;">
-      <h2 class="title is-3">Demo Video</h2>
-      <video controls width="80%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        <source src="video/demo.mp4" type="video/mp4">
-        您的浏览器不支持 HTML5 视频，请使用现代浏览器（如 Chrome/Firefox）。
-      </video>
-      <p class="is-italic" style="margin-top: 10px;">Morpheus</p>
-    </div>
-  </div>
-</section>
-
-
-<!-- Teaser image-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body" style="text-align: center;">
-      <img src="Fig/teaser.jpg" 
-           alt="Morpheus: Hybrid Actuation Animatronic Face" 
-           style="display: block; 
-                  margin: 0 auto; 
-                  max-width: 60%; 
-                  height: auto;
-                  border-radius: 8px;
-                  box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-      <!-- 可选的图片说明文字 -->
-      <!-- <p class="has-text-centered is-italic" style="margin-top: 10px;">
-        Morpheus 
-      </p> -->
-    </div>
-  </div>
-</section>
-<!-- End teaser section -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Previous animatronic faces struggle to express emotions effectively due to hardware and software limitations. On the hardware side, earlier approaches either use rigid-driven mechanisms, which provide precise control but are difficult to design within constrained spaces, or tendon-driven mechanisms, which are more space-efficient but challenging to control. In contrast, we propose a hybrid actuation approach that combines the best of both worlds. The eyes and mouth—key areas for emotional expression—are controlled using rigid mechanisms for precise movement, while the nose and cheek, which convey subtle facial microexpressions, are driven by strings. This design allows us to build a compact yet versatile hardware platform capable of expressing a wide range of emotions. On the algorithmic side, our method introduces a self-modeling network that maps motor actions to facial landmarks, allowing us to automatically establish the relationship between blendshape coefficients for different facial expressions and the corresponding motor control signals through gradient backpropagation. We then train a neural network to map speech input to corresponding blendshape controls. With our method, we can generate distinct emotional expressions such as happiness, fear, disgust, and anger, from any given sentence, each with nuanced, emotion specific control signals—a feature that has not been demonstrated in earlier systems. We release the hardware design and code at https://github.com/ZZongzheng0918/Morpheus-Hardware and https://github.com/ZZongzheng0918/Morpheus-Software.
-          </p>
+<section>
+  <div class="container" style="width:58%">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>Hardware Design</strong></h2>
+        <hr style="margin-top:0px">
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <video width="90%" playsinline="" preload="" muted="" controls>
+            <source src="video/hardware.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
   </div>
+  </div>
 </section>
-<!-- End paper abstract -->
+<br>
+<br>
 
-<!-- Overview of of the Mechanism for Generating Realistic Speech-driven Facial Expressions.-->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop content">
-      <h2 class="title is-3">System Overview</h2>
-      
-      <!-- Image with centered display -->
-      <img src="Fig/overview.jpg" 
-           alt="Overview of of the Mechanism for Generating Realistic Speech-driven Facial Expressions."
-           style="display:block; margin:30px auto; width:100%; max-width:900px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
-      
-      <!-- Your description text -->
-      <div class="columns is-centered">
-        <div class="column is-three-quarters">
-          <div class="content has-text-centered">
-            <p class="is-size-5">
-              Our speech-driven robotic face system with varying expressions consists of three main components:
-              <strong>1) Emotional Facial Animation</strong> module, <strong>2) Mechanical Face Platform</strong>, and <strong>3) Face Inverse Learning</strong> module.
-            </p>
-          </div>
+<section>
+  <div class="container" style="width:58%">
+    <div class="row">
+      <div class="col-12 text-center">
+        <hr style="margin-top:0px">
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <img src="Fig/teaser.jpg" alt="input" class="img-responsive" width="100%" />
+          <br>
         </div>
+        <!-- </div> -->
       </div>
-      
-      <!-- Optional: Add numbered annotations on the image? -->
     </div>
   </div>
 </section>
+<br>
 
+<!-- abstract -->
+<section>
+  <div class="container" style="width:58%">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>Abstract</strong></h2>
+        <hr style="margin-top:0px">
+        <p class="text-justify">
+          Previous animatronic faces struggle to express emotions effectively due to hardware and software limitations. On the hardware side, earlier approaches either use rigid-driven mechanisms, which provide precise control but are difficult to design within constrained spaces, or tendon-driven mechanisms, which are more space-efficient but challenging to control. In contrast, we propose a hybrid actuation approach that combines the best of both worlds. The eyes and mouth—key areas for emotional expression—are controlled using rigid mechanisms for precise movement, while the nose and cheek, which convey subtle facial microexpressions, are driven by strings. This design allows us to build a compact yet versatile hardware platform capable of expressing a wide range of emotions. On the algorithmic side, our method introduces a self-modeling network that maps motor actions to facial landmarks, allowing us to automatically establish the relationship between blendshape coefficients for different facial expressions and the corresponding motor control signals through gradient backpropagation. We then train a neural network to map speech input to corresponding blendshape controls. With our method, we can generate distinct emotional expressions such as happiness, fear, disgust, and anger, from any given sentence, each with nuanced, emotion specific control signals—a feature that has not been demonstrated in earlier systems. We release the hardware design and code at https://github.com/ZZongzheng0918/Morpheus-Hardware and https://github.com/ZZongzheng0918/Morpheus-Software.
 
-
-<!-- Hardware Design -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop content">
-      <h2 class="title is-3">System Overview</h2>
-      
-      <!-- Image with centered display -->
-      <img src="Fig/hardware.png" 
-           alt="Hardware Design of Our Mechanical Face Platform."
-           style="display:block; margin:30px auto; width:80%; max-width:900px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
-      
-      <!-- Your description text -->
-      <div class="columns is-centered">
-        <div class="column is-three-quarters">
-          <div class="content has-text-centered">
-            <p class="is-size-5">
-              The <strong>Mechanical Face Platform</strong> consists of four components: <strong>1)Neck moudle </strong>, <strong>2)Mouth module</strong>, <strong>3)Eye module</strong> and <strong>4)Eyebrow module</strong>. Further details can be seen at:<a href="http://hxu.rocks/" target="_blank">https://github.com/ZZongzheng0918/Morpheus-Hardware.git.</a>
-            </p>
-          </div>
-        </div>
+        </p>
       </div>
-      
-      <!-- Image with centered display -->
-      <img src="Fig/diverse.jpg" 
-           alt="Expressions generated by the mechanical face platform."
-           style="display:block; margin:30px auto; width:60%; max-width:900px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
-      
-      <!-- Your description text -->
-      <div class="columns is-centered">
-        <div class="column is-three-quarters">
-          <div class="content has-text-centered">
-            <p class="is-size-5">
-              25 different human facial expressions are selected, ranging from basic emotions such as ”angry,” ”happy,” ”sad,” ”fear,” ”disgust,” to more nuanced ones like ”skeptical,” ”shy,” and ”sympathetic.” These expressions are generated through precise control of the eyebrow, eye, mouth and neck modules, showcasing the hardware system’s ability to produce a wide variety of rich and complex facial movements. The platform’s ability to replicate such a broad range of emotional states demonstrates its versatility and strong potential for realistic human-robot interaction.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Optional: Add numbered annotations on the image? -->
     </div>
   </div>
 </section>
-
-
-
-
-
+<br>
 <!-- Video Grid Section -->
 <section class="section">
   <div class="container">
@@ -509,44 +338,52 @@
 }
 </style>
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>
+<!-- citing -->
+<div class="container" style="width:58%">
+  <div class="row ">
+    <div class="col-12">
+      <h2><strong>Citation</strong></h2>
+      <hr style="margin-top:0px">
+      <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
+<code>
         @article{Morpheus,
           title={Morpheus: A Neural-driven Animatronic Face with Hybrid Actuation and Diverse Emotion Control},
           author={Zongzheng Zhang and Jiawen Yang and Ziqiao Peng and Meng Yang and Jianzhu Ma and Lin Cheng and Huazhe Xu and Hang Zhao and Hao Zhao},
           journal={Robotics: Science and Systems (RSS)},
           year={2025}
         }
-      </code></pre>
+</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
+  </div>
+</div>
+<br>
 
-
-<!-- HTML -->
-<section class="section">  <!-- 新增 section 包裹 footer -->
-  <footer class="footer">
-    <div class="container is-max-desktop content">
-      <h2 class="title">Contact</h2>
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content">
-            <p><li> <strong>Hao Zhao</strong>: zhaohao@air.tsinghua.edu.cn </li></p>
-          </div>
-        </div>
-      </div>
+<!-- Contact -->
+<div class="container" style="width:58%">
+  <div class="row ">
+    <div class="col-12">
+      <h2><strong>Contact</strong></h2>
+      <hr style="margin-top:0px">
+      <p>If you have any questions, please feel free to contact <b>Hao Zhang</b> at zhaohao@air.tsinghua.edu.cn.
+      </p>
+      </pre>
     </div>
-  </footer>
-</section>
+  </div>
+</div>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+<footer class="text-center" style="margin-bottom:10px; font-size: medium;">
+  <hr>
+  Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the <a
+    href="https://lioryariv.github.io/idr/" target="_blank">website template</a>.
+</footer>
+<script>
+  MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</body>
+
+</html>
